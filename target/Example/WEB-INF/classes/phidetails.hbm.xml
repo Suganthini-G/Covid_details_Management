@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Project.model.phidetails" table="phi" schema="project">
+        <id name="id" type="int" column ="id">
+            <generator class="assigned"/>
+        </id>
+        <property name="name" type="string"><column name="Name" length="30" not-null="true"/></property>
+        <property name="nic" type="string"><column name="nic" length="30" not-null="true"/></property>
+        <property name="phidivision" type="string"><column name="phi_division" length="30" not-null="true"/></property>
+        <property name="phoneno" type="string"><column name="Phone_Number" length="30" not-null="true"/></property>
+        <property name="password" type="string"><column name="Password" length="30" not-null="true"/></property>
+    </class>
+</hibernate-mapping>
